@@ -52,13 +52,11 @@ struct Node {
 }
 
 impl List {
-    //TODO:
     pub fn new() -> Self {
         List { head: Link::Empty }
     }
 
     pub fn push(&mut self, elem: i32) {
-        //TODO:
         let new_node = Box::new(Node {
             elem: elem,
             next: mem::replace(&mut self.head, Link::Empty),
@@ -75,8 +73,6 @@ impl List {
                 Some(node.elem)
             }
         }
-        // result
-        // unimplemented!()
     }
 }
 
